@@ -85,7 +85,7 @@ plt.show()
 ```
 ![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/pairplot1.PNG)
 
-Distribuição das variações diárias do Ibovespa:
+A distribuição das variações diárias do Ibovespa é uma distribuição normal:
 
 ```python
 sns.distplot(returns['IBOV'].dropna())
