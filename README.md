@@ -5,7 +5,7 @@ Esta é uma introdução de como analisar dados históricos de ações, índices
 
 A importação dos dados é feita de forma muito simples, ao invés de fazer o download dos dados pelo site do yahoo nós podemos importar de forma personalizada as cotações históricas diretamente pelo método pandas_datareader.data.get_data_yahoo().
 
--- imagem da tabela do yahoo
+![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/tabela_yahoo.PNG)
 
 Primeiro importei as cotações ajustadas de fechamento de pregão de ITUB3, BBAS3, BBDC3, SANB3 e do índice bovespa ^BVSP. O ticker correto a ser utilizado no código pode ser facilmente consultado no yahoo finance. Então puxei os dados de cotação ajustada por splits e dividendos (Adj Close) de 01/01/2008 até o 15/03/2020 (dia em que o estudo foi realizado). A fim de melhor visualização, as colunas foram renomeadas e foi realizada uma transformação na pontuação do Ibovespa, dividindo seus valores por 1000.
 
@@ -36,7 +36,7 @@ plt.grid()
 plt.title("Cotação x tempo", fontsize = 25)
 plt.show()
 ```
--- imagem de cotação x tempo
+![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/cotacaoxtempo.PNG)
 
 Uma forma muito interessante de analisar o comportamento de um ativo no longo prazo é visualizar suas médias móveis, e isso pode ser feito de forma muito simples com o pacote Pandas. Utilizei o método .rolling do Pandas para criar e plotar médias móveis trimestrais e anuais de ITUB3, como exemplo.
 
@@ -50,7 +50,7 @@ plt.title('Cotações diárias e médias móveis de ITUB3', fontsize = 15)
 plt.legend(['Média móvel trimestral','Cotação diária','Média móvel anual'])
 plt.show()
 ```
--- medias moveis
+![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/mediasmóveis.PNG)
 
 Então plotei um mapa de calor da correlação dos ativos. prices.corr() me retorna uma matriz numérica dos valores de correlação das cotações, mas fica muito mais agradável de visualizar esses dados em um mapa de calor. O parâmetro annot = True faz com que os valores fiquem visíveis no mapa.
 
@@ -59,7 +59,7 @@ sns.heatmap(prices.corr(), annot = True)
 plt.show()
 ```
 
---heatmap
+![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/heatmap.PNG)
 
 ## 2) Retorno diário
 
@@ -73,7 +73,7 @@ returns['Date'] = prices['Date']
 
 returns.describe()
 ```
--- describe
+![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/describe.PNG)
 
 O desvio padrão(std) do retorno diário representa a volatilidade. Esta simples tabela possui informações muito ricas, principalmente o desvio padrão e média dos retornos das ações. O desvio padrão(std) do retorno diário representa a volatilidade. O índice IBOV foi menos volátil que as ações dos 4 bancos neste período, mas também teve retorno diário médio menor (mean = 0.000249).
 
@@ -83,14 +83,14 @@ Pairplot nos permite visualizar as relações entre cada variável do nosso data
 sns.pairplot(returns)
 plt.show()
 ```
--- pairplot
+![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/pairplot.PNG)
 
 Distribuição das variações diárias do Ibovespa:
 
 ```python
 sns.distplot(returns['IBOV'].dropna())
 ```
--- distplot ibov
+![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/distplot.PNG)
 
 ## 3) Retorno acumulado
 
@@ -109,6 +109,8 @@ plt.title("Retorno x tempo", fontsize = 15)
 plt.grid()
 plt.show()
 ```
+![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/retorno.PNG)
+
 ## 4) Conclusão
 
 O intuito deste pequeno estudo foi mostrar como é possível começar a fazer análise de dados de ações utilizando o Python. A partir disso é possível se aprofundar muito mais, obter insights valiosos, fazer análises preditivas e muito mais, principalmente se você for um expert em mercado financeiro, o que não é meu caso :)
