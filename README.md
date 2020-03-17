@@ -36,7 +36,7 @@ plt.grid()
 plt.title("Cotação x tempo", fontsize = 25)
 plt.show()
 ```
-![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/cotacaoxtempo.PNG)
+![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/cotacaotempo.PNG)
 
 Uma forma muito interessante de analisar o comportamento de um ativo no longo prazo é visualizar suas médias móveis, e isso pode ser feito de forma muito simples com o pacote Pandas. Utilizei o método .rolling do Pandas para criar e plotar médias móveis trimestrais e anuais de ITUB3, como exemplo.
 
