@@ -1,7 +1,7 @@
 # Analise-de-acoes-com-Python
 ### Como obter os dados históricos e analisar ações da bolsa utilizando o Pandas
 
-Esta é uma introdução de como analisar dados históricos de ações, índices e câmbios. A fonte utilizada foi o https://finance.yahoo.com, por onde é possível obter os dados de forma muito simples usando o Pandas. Este estudo não tem como finalidade a recomendação de compra de nenhum ativo, é somente uma demonstração de como utilizar a linguagem Python para começar uma análise de ativos na bolsa, sendo possível, a partir disso, analisar de forma mais profunda e implementar modelos preditivos de machine learning.
+Esta é uma introdução de como analisar dados históricos de ações, índices e câmbios utilizando Python. A fonte utilizada foi o https://finance.yahoo.com, por onde é possível obter os dados de forma muito simples usando o Pandas. Este estudo não tem como finalidade a recomendação de compra de nenhum ativo, é somente uma demonstração de como utilizar a linguagem Python para começar uma análise de ativos na bolsa, sendo possível, a partir disso, analisar de forma mais profunda e implementar modelos preditivos de machine learning.
 
 A importação dos dados é feita de forma muito simples, ao invés de fazer o download dos dados pelo site do yahoo nós podemos importar de forma personalizada as cotações históricas diretamente pelo método pandas_datareader.data.get_data_yahoo().
 
