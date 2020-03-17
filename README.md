@@ -75,7 +75,7 @@ returns.describe()
 ```
 ![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/describe.PNG)
 
-O desvio padrão(std) do retorno diário representa a volatilidade. Esta simples tabela possui informações muito ricas, principalmente o desvio padrão e média dos retornos das ações. O desvio padrão(std) do retorno diário representa a volatilidade. O índice IBOV foi menos volátil que as ações dos 4 bancos neste período, mas também teve retorno diário médio menor (mean = 0.000249).
+Esta simples tabela possui informações muito ricas, principalmente o desvio padrão e média dos retornos das ações. O desvio padrão(std) do retorno diário representa a volatilidade. O índice IBOV foi menos volátil que as ações dos 4 bancos neste período, mas também teve retorno diário médio menor (mean = 0.000249).
 
 Pairplot nos permite visualizar as relações entre cada variável do nosso dataset:
 
