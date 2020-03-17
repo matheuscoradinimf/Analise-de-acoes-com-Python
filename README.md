@@ -59,7 +59,7 @@ sns.heatmap(prices.corr(), annot = True)
 plt.show()
 ```
 
-![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/heatmap.PNG)
+![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/heatmap1.PNG)
 
 ## 2) Retorno diário
 
@@ -83,7 +83,7 @@ Pairplot nos permite visualizar as relações entre cada variável do nosso data
 sns.pairplot(returns)
 plt.show()
 ```
-![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/pairplot.PNG)
+![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/pairplot1.PNG)
 
 Distribuição das variações diárias do Ibovespa:
 
@@ -109,7 +109,7 @@ plt.title("Retorno x tempo", fontsize = 15)
 plt.grid()
 plt.show()
 ```
-![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/retorno.PNG)
+![screenshot1](https://github.com/matheuscoradini/Analise-de-acoes-com-Pandas/blob/master/imagens/retorno1.PNG)
 
 ## 4) Conclusão
 
