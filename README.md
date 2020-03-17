@@ -113,4 +113,4 @@ plt.show()
 
 ## 4) Conclusão
 
-O intuito deste pequeno estudo foi mostrar como é possível começar a fazer análise de dados de ações utilizando o Python. A partir disso é possível se aprofundar muito mais, obter insights valiosos, fazer análises preditivas e muito mais, principalmente se você for um expert em mercado financeiro, o que não é meu caso :)
+O intuito deste pequeno estudo foi mostrar como é possível começar a fazer análise de dados de ações utilizando o Python. A partir disso é possível se aprofundar, obter insights valiosos, fazer análises preditivas e muito mais. Principalmente se você for um expert em mercado financeiro, o que não é meu caso :)
