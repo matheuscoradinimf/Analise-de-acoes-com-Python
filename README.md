@@ -94,7 +94,7 @@ sns.distplot(returns['IBOV'].dropna())
 
 ## 3) Retorno acumulado
 
-O retorno acumulado de um ativo é calculado multiplicando os retornos diários somados por 1. Por exemplo: o retorno acumulado de 3 dias em que uma ação subiu 2% é (1.02 x 1.02 x 1.02) = 1.0612. Fiz este cálculo criando um novo DataFrame aplicando o método cumsum() no DataFrame de retornos diários. Este plot mostra o retorno acumulado desde 01/01/2008.
+O retorno acumulado de um ativo é calculado multiplicando os retornos diários somados por 1. Por exemplo: o retorno acumulado de 3 dias em que uma ação subiu 2% é (1.02 x 1.02 x 1.02) = 1.0612. Fiz este cálculo aplicando o método cumsum() no DataFrame de retornos diários. Este plot mostra o retorno acumulado desde 01/01/2008.
 
 ```python
 return_sum = pd.DataFrame()
